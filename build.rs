@@ -7,7 +7,7 @@ fn main() {
     let out_dir = env::var("OUT_DIR").unwrap();
     let hosturl = match env::var("HOSTURL") {
         Ok(key) => key,
-        Err(error) => panic!("Error: {:?} ADDR ENV variable required", error),
+        Err(error) => panic!("Error: {:?} HOSTURL ENV variable required", error),
     };
 
     let port = match env::var("PORT") {
