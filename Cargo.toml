@@ -31,6 +31,9 @@ ioctl-rs = "0.2"
 signal-hook = "0.3.10"
 #openssl-sys = "0.9.67"
 
+[target.x86_64-unknown-linux-gnu]
+linker = "x86_64-unknown-linux-gnu-gcc"
+
 [dependencies.windows]
 version = "0.29.0"
 features = [
